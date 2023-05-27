@@ -1,0 +1,15 @@
+.homePage{
+
+}
+.homePage span{
+    color: rgb(10, 156, 156);
+}
+.homePage p{
+    margin: 0px;
+    color: white;
+}
+#profilePic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
