@@ -1,15 +1,99 @@
 .homePage{
-
+    margin: 40px;
+    min-height: 100vh;
 }
-.homePage span{
+.introduction{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.description{
+    width: 50vw;    
+    animation: .7s ease-out 0s 1 slideInFromLeftToRight;
+}
+.description span{
     color: rgb(10, 156, 156);
 }
-.homePage p{
-    margin: 0px;
-    color: white;
+h1, h3, h5{
+    color: rgb(235, 227, 227);
+}
+.learn-more{
+    background-color: teal;
+    color: rgb(235, 227, 227);
+    font-size: large;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+}
+
+.logo-links{
+    display: flex;
+    justify-content: center;
+}
+.logo-links i{
+    margin-right: 10px;
+    margin-top: 10px;
+    color: teal;
+    font-size: larger;
+}
+#github-link:hover{
+    color: rgb(235, 227, 227);
+}
+#linkedin-link:hover{
+    color: rgb(235, 227, 227);
 }
 #profilePic{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    animation: .7s ease-out 0s 1 slideInFromRightToLeft;
+
+}
+
+@keyframes slideInFromLeftToRight {
+    0% {
+        transform: translateX(-1000px);
+        opacity: .10;
+    }
+    20%{
+        opacity: .30;
+    }
+    40%{
+        opacity: .50;
+    }
+    60%{
+        opacity: .70;
+    }
+    80%{
+        opacity: .90;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideInFromRightToLeft {
+    0% {
+        transform: translateX(1000px);
+        opacity: .10;
+    }
+    20%{
+        opacity: .30;
+    }
+    40%{
+        opacity: .50;
+    }
+    60%{
+        opacity: .70;
+    }
+    80%{
+        opacity: .90;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
