@@ -7,6 +7,18 @@
 .left-side-of-navbar{
     display: flex;
     align-items:center;
+    margin-left: 20px;
+}
+.initial-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid teal;
+    border-radius: 10px;
+    min-width: max-content;
+}
+.initial-box i{
+    color: teal;
 }
 .left-side-of-navbar p{
     margin-left: 10px;
@@ -32,6 +44,7 @@
     margin: 8px;
     text-decoration: none;
     transition: .5s ease-in-out;
+    min-width: max-content;
 }
 .right-side-of-navbar p:hover{
     text-decoration: underline;

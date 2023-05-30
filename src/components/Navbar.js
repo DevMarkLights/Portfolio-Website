@@ -20,11 +20,42 @@ const Navbar = () => {
         }
         
     }
+
+    useEffect(() =>{
+        let url = window.location.pathname
+        url = url.replace('/','')
+        for(var link of arrayNavLinks){
+            if(link === url){
+                var el = document.getElementById(link)
+                el.style.color = "teal";
+            }
+            else {
+                var el = document.getElementById(link)
+                el.style.color = "white";
+            }
+        }
+    },[])
     
   return (
     <div className='navbar'>
         <div className='left-side-of-navbar'>
-            <img className='logo' src={Logo} alt='logo'/> 
+            {/* <img className='logo' src={Logo} alt='logo'/>  */}
+            <div className='initial-box'>
+                <div>
+                    <i className="fa-solid fa-m"></i>
+                    <i className="fa-solid fa-a"></i>
+                    <i className="fa-solid fa-r"></i>
+                    <i className="fa-solid fa-k"></i>
+                </div>
+                <div>
+                    <i className="fa-solid fa-l"></i>
+                    <i className="fa-solid fa-i"></i>
+                    <i className="fa-solid fa-g"></i>
+                    <i className="fa-solid fa-h"></i>
+                    <i className="fa-solid fa-t"></i>
+                    <i className="fa-solid fa-s"></i>
+                </div>
+            </div>
         </div>
         <div className='right-side-of-navbar'>
             <Link to='/home' style={{textDecoration: 'none'}} onClick={() => {checkurl('home')}}>

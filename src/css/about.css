@@ -1,0 +1,23 @@
+.about-body{
+    padding: 20px;
+}
+.descrip-pp-container{
+    display: flex;
+    justify-content: space-around;
+}
+.description h2,
+.description h4{
+    color: rgb(235, 227, 227);
+}
+.description h4{
+    margin: 5px 0px;
+}
+.description li{
+    color: teal;
+    margin-bottom: 10px;
+}
+.profile-pic-about{
+    width: 225px;
+    height: auto;
+    border-radius: 5px;
+}
