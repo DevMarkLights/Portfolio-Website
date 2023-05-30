@@ -20,4 +20,5 @@
     width: 225px;
     height: auto;
     border-radius: 5px;
+    animation: .7s ease-out 0s 1 slideInFromRightToLeft;
 }

@@ -31,6 +31,7 @@ h1, h3, h5{
 .logo-links{
     display: flex;
     justify-content: center;
+    animation: .7s ease-out 0s 1 slideInFromRightToLeft;
 }
 .logo-links i{
     margin-right: 10px;
