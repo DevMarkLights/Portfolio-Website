@@ -5,6 +5,7 @@ import Redirect from './components/redirect';
 import Navbar from './components/Navbar'
 import Resume from './pages/resume';
 import About from './pages/about';
+import Portfolio from './pages/portfolio';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" element={<Home/>}/>
         <Route path="/resume" element={<Resume/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}/>
       </Routes>
      </BrowserRouter>
     </div>

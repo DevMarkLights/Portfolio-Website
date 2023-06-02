@@ -9,9 +9,12 @@ const About = () => {
                 <h2>I'm a Software Developer</h2>
                 <h4>with a Bachelors of Science in Computer Science from Francis Marion <i class="fa fa-university" aria-hidden="true"></i></h4>
                 <h4>My profecient skills are: <span >Java, React.js, HTML, CSS, Javascript, Node.js, Express.js, Spring Boot, Google cloud, MongoDB, SQL, and RESTful APIs </span></h4>
-                <h3>Short Goal:</h3>
+                <h3>Short Term Goals:</h3>
                 <ul>
-                    <li>Keep developing my software development skillest</li>
+                    <li>Keep developing my software development skillest in new emerging technologies</li>
+                </ul>
+                <h3>Long Term Goals:</h3>
+                <ul>
                     <li>Go back to college and get my Masters in Computer Science with a Concentration in AI/Machine Learning</li>
                 </ul>
             </div>
