@@ -7,7 +7,7 @@ const About = () => {
         <div className='descrip-pp-container'>
             <div className='description'>
                 <h2>I'm a Software Developer</h2>
-                <h4>with a Bachelors of Science in Computer Science from Francis Marion <i class="fa fa-university" aria-hidden="true"></i></h4>
+                <h4>With a Bachelors of Science in Computer Science from Francis Marion <i className="fa fa-university" aria-hidden="true"></i></h4>
                 <h4>My profecient skills are: <span >Java, React.js, HTML, CSS, Javascript, Node.js, Express.js, Spring Boot, Google cloud, MongoDB, SQL, and RESTful APIs </span></h4>
                 <h3>Short Term Goals:</h3>
                 <ul>

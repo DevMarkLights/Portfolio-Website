@@ -19,7 +19,7 @@ h1, h3, h5{
     color: rgb(235, 227, 227);
 }
 .learn-more{
-    background-color: teal;
+    background-color: rgb(10, 156, 156);
     color: rgb(235, 227, 227);
     font-size: large;
     width: 150px;
@@ -36,7 +36,7 @@ h1, h3, h5{
 .logo-links i{
     margin-right: 10px;
     margin-top: 10px;
-    color: teal;
+    color: rgb(10, 156, 156);
     font-size: larger;
 }
 #github-link:hover{

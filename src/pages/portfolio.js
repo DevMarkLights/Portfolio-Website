@@ -27,9 +27,9 @@ const Portfolio = () => {
                     <li>MongoDB</li>
                     <li>Hosting:</li>
                     <ul>
-                    <li>Google Cloud</li>
+                        <li>Google Cloud</li>
                     </ul>
-                    <li>Payment Processor</li>
+                        <li>Payment Processor</li>
                     <ul>
                         <li>Stripe</li>
                     </ul>

@@ -1,24 +1,26 @@
 import {React,useEffect,useState} from 'react'
 import '../css/Navbar.css'
-import Logo from '../files/LightsLogo.png'
 import {Link} from 'react-router-dom'
+import Contact from '../pages/contact'
 
 const Navbar = () => {
-    var arrayNavLinks = ['home','about','resume','portfolio','contact']
-    
-
+    var arrayNavLinks = ['home','about','resume','portfolio']
+    const [contactClicked,setContactClicked] = useState(false)
     function checkurl(id){
         for(var link of arrayNavLinks){
             if(link === id){
                 var el = document.getElementById(link)
-                el.style.color = "teal";
+                el.style.color = "rgb(10, 156, 156)";
             }
             else {
                 var el = document.getElementById(link)
-                el.style.color = "white";
+                el.style.color = "rgb(235, 227, 227)";
             }
         }
-        
+    }
+
+    function checkContactClicked(){
+        setContactClicked(!contactClicked)
     }
 
     useEffect(() =>{
@@ -27,11 +29,11 @@ const Navbar = () => {
         for(var link of arrayNavLinks){
             if(link === url){
                 var el = document.getElementById(link)
-                el.style.color = "teal";
+                el.style.color = "rgb(10, 156, 156)";
             }
             else {
                 var el = document.getElementById(link)
-                el.style.color = "white";
+                el.style.color = "rgb(235, 227, 227)";
             }
         }
     },[])
@@ -39,8 +41,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className='left-side-of-navbar'>
-            {/* <img className='logo' src={Logo} alt='logo'/>  */}
-            <div className='initial-box'>
+              <div className='initial-box'>
                 <div>
                     <i className="fa-solid fa-m"></i>
                     <i className="fa-solid fa-a"></i>
@@ -55,7 +56,7 @@ const Navbar = () => {
                     <i className="fa-solid fa-t"></i>
                     <i className="fa-solid fa-s"></i>
                 </div>
-            </div>
+            </div>  
         </div>
         <div className='right-side-of-navbar'>
             <Link to='/home' style={{textDecoration: 'none'}} onClick={() => {checkurl('home')}}>
@@ -70,9 +71,11 @@ const Navbar = () => {
             <Link to='/portfolio' style={{textDecoration: 'none'}} onClick={() => {checkurl('portfolio')}}>
                 <p id='portfolio'>Portfolio</p>
             </Link>
-            <Link to='/contact' style={{textDecoration: 'none'}} onClick={() => {checkurl('contact')}}>
-                <p id='contact'>Contact Me</p>
-            </Link>
+            <p id='contact' onClick={() =>{checkContactClicked()}}>Contact Me</p>
+            {
+                contactClicked &&
+                <Contact/>
+            }
         </div>
     </div>
   )
