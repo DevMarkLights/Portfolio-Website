@@ -1,0 +1,25 @@
+.sidebar-body{
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 156, 156);
+    padding: 5px 5px;
+    border-radius: 10px;
+    animation: .3s ease-in-out 0s slideFromTop;
+    align-items: center;
+}
+.sidebar-body p{
+    color: rgb(235, 227, 227);
+    margin: 10px 0px;
+}
+
+@keyframes slideFromTop {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

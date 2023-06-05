@@ -124,3 +124,22 @@ li{
         opacity: 1;
     }
 }
+
+@media (width < 499px){
+    .portfolio-body{
+        padding: 5px;
+    }
+    .projects-list{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .left-side-of-project{
+        width: 80%;
+    }
+    .right-side-of-project{
+        width: 80%;
+    }
+}

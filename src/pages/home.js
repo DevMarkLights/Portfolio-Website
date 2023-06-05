@@ -12,7 +12,9 @@ const Home = () => {
                 <h1>Hi, I am <span>Mark Lights</span></h1>
                 <h3>I'm a full stack software engineer</h3>
                 <h5>Skilled in Java, CSS, M.E.R.N. Stack, and SQL and currently employed at General Motors</h5>
-                <button className='learn-more'>Learn More</button>
+                <Link to={'/about'} style={{textDecoration: 'none'}}>
+                    <button className='learn-more'>Learn More</button>
+                </Link>
             </div>
             <div>
                 <img id='profilePic' src={appleBitmoji}></img>

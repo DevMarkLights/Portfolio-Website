@@ -2,10 +2,12 @@ import {React,useEffect,useState} from 'react'
 import '../css/Navbar.css'
 import {Link} from 'react-router-dom'
 import Contact from '../pages/contact'
-
+import Sidebar from './sidebar'
 const Navbar = () => {
     var arrayNavLinks = ['home','about','resume','portfolio']
     const [contactClicked,setContactClicked] = useState(false)
+    const [mediumDevice,setMediumDevice] = useState(false)
+    const [sidebarOpened, setSidebarOpened] = useState(false)
     function checkurl(id){
         for(var link of arrayNavLinks){
             if(link === id){
@@ -18,22 +20,33 @@ const Navbar = () => {
             }
         }
     }
-
-    function checkContactClicked(){
-        setContactClicked(!contactClicked)
-    }
-
+    
     useEffect(() =>{
-        let url = window.location.pathname
-        url = url.replace('/','')
-        for(var link of arrayNavLinks){
-            if(link === url){
-                var el = document.getElementById(link)
-                el.style.color = "rgb(10, 156, 156)";
+        var md
+        function handleResize(){
+            if(window.innerWidth <= 499){
+                setMediumDevice(true);
+                md = true
+            }else{
+                setMediumDevice(false);
+                md = false
             }
-            else {
-                var el = document.getElementById(link)
-                el.style.color = "rgb(235, 227, 227)";
+        }
+        window.addEventListener("resize", handleResize())
+        handleResize()
+
+        if(!md){
+            let url = window.location.pathname
+            url = url.replace('/','')
+            for(var link of arrayNavLinks){
+                if(link === url){
+                    var el = document.getElementById(link)
+                    el.style.color = "rgb(10, 156, 156)";
+                }
+                else {
+                    var el = document.getElementById(link)
+                    el.style.color = "rgb(235, 227, 227)";
+                }
             }
         }
     },[])
@@ -58,25 +71,46 @@ const Navbar = () => {
                 </div>
             </div>  
         </div>
-        <div className='right-side-of-navbar'>
-            <Link to='/home' style={{textDecoration: 'none'}} onClick={() => {checkurl('home')}}>
-                <p id='home'>Home</p>
-            </Link>
-            <Link to='/about' style={{textDecoration: 'none'}} onClick={() => {checkurl('about')}}>
-                <p id='about'>About</p>
-            </Link>
-            <Link to='/resume' style={{textDecoration: 'none'}} onClick={() => {checkurl('resume')}}>
-                <p id='resume'>Resume</p>
-            </Link>
-            <Link to='/portfolio' style={{textDecoration: 'none'}} onClick={() => {checkurl('portfolio')}}>
-                <p id='portfolio'>Portfolio</p>
-            </Link>
-            <p id='contact' onClick={() =>{checkContactClicked()}}>Contact Me</p>
-            {
-                contactClicked &&
-                <Contact/>
-            }
-        </div>
+        {
+            mediumDevice ?
+            <>
+                {
+                    sidebarOpened ?
+                    <div>
+                        <i className="fa-solid fa-x" onClick={() => {setSidebarOpened(!sidebarOpened)}}></i>
+                    </div>
+                    :
+                    <div>
+                        <i className="fa-solid fa-bars" onClick={() => {setSidebarOpened(!sidebarOpened)}}></i>
+                    </div>
+                }
+            </>
+            :
+            <div className='right-side-of-navbar'>
+                <Link to='/home' style={{textDecoration: 'none'}} onClick={() => {checkurl('home')}}>
+                    <p id='home'>Home</p>
+                </Link>
+                <Link to='/about' style={{textDecoration: 'none'}} onClick={() => {checkurl('about')}}>
+                    <p id='about'>About</p>
+                </Link>
+                <Link to='/resume' style={{textDecoration: 'none'}} onClick={() => {checkurl('resume')}}>
+                    <p id='resume'>Resume</p>
+                </Link>
+                <Link to='/portfolio' style={{textDecoration: 'none'}} onClick={() => {checkurl('portfolio')}}>
+                    <p id='portfolio'>Portfolio</p>
+                </Link>
+                <p id='contact' onClick={() =>{setContactClicked(!contactClicked)}}>Contact Me</p>
+                {
+                    contactClicked &&
+                    <Contact/>
+                }
+            </div>
+        }
+        {
+            sidebarOpened &&
+            <Sidebar array={arrayNavLinks}/>
+        }
+        
     </div>
   )
 }

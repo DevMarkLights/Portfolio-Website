@@ -23,3 +23,15 @@
     animation: .7s ease-out 0s 1 slideInFromRightToLeft;
 }
 
+@media (width < 499px){
+    .about-body{
+        padding: 5px;
+    }
+    .descrip-pp-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .description{
+      width: 80%;
+    }
+}

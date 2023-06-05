@@ -97,3 +97,16 @@ h1, h3, h5{
         opacity: 1;
     }
 }
+
+@media (width < 499px){
+    .homePage{
+        margin: 10px;
+    }
+    .introduction{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
