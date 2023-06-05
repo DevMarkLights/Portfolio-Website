@@ -46,6 +46,7 @@
     text-decoration: none;
     transition: .5s ease-in-out;
     min-width: max-content;
+    color: rgb(235, 227, 227);
 }
 #home:hover,#about:hover,#resume:hover,#portfolio:hover,#contact:hover{
      text-decoration: underline;
