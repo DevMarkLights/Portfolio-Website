@@ -16,17 +16,8 @@ const Resume = () => {
 
   return (
     <>
-    {
-      mediumDevice  ?
-      <>
-        <img className='resume1' src={resume1}/>
-        <img className='resume2' src={resume2}/>
-      </>
-      :
-      <div>
-         <object data={resume} type="application/pdf"></object>
-      </div>
-    }
+      <img className='resume1' src={resume1}/>
+      <img className='resume2' src={resume2}/>
     </>
     
   )
