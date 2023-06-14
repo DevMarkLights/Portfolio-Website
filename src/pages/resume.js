@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react'
-import resume from '../files/resume.pdf'
 import '../css/resume.css'
-import resume1 from '../files/resume(page1).png'
-import resume2 from '../files/resume(page2).png'
+import resume1 from '../files/resume1.png'
+import resume2 from '../files/resume2.png'
 const Resume = () => {
   const [mediumDevice,setMediumDevice] = useState(false)
   

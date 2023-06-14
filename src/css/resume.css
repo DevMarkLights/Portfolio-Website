@@ -4,7 +4,8 @@ object{
     margin: 10px 2.5%;
 }
 .resume1,.resume2{
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
 
 }
 .resume1{
