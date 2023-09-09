@@ -13,6 +13,7 @@ object{
 }
 .resume2{
     animation: .3s ease-in-out 0s slideFromBottom;
+    margin-top: -3px;
 }
 
 @keyframes slideFromTop {
