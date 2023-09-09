@@ -37,9 +37,7 @@ const Portfolio = () => {
             </div>
 
             <div className='right-side-of-project'>
-            <Link to={'https://cohesive-mile-381420.uc.r.appspot.com/'} style={{textDecoration: 'none'}}>
                 <img className='kiroLandingPage' src={kiroLandingPage} alt='landing page of website'/>
-            </Link>
             </div>
         </div>
         
