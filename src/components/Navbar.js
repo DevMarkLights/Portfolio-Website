@@ -23,17 +23,15 @@ const Navbar = () => {
     
     useEffect(() =>{
         var md
-        function handleResize(){
-            if(window.innerWidth <= 499){
-                setMediumDevice(true);
-                md = true
+        window.addEventListener('resize', () =>{
+            if(window.innerWidth < 499){
+              setMediumDevice(true)
+              md = true
             }else{
-                setMediumDevice(false);
-                md = false
+              setMediumDevice(false)
+              md = false
             }
-        }
-        window.addEventListener("resize", handleResize())
-        handleResize()
+          })
 
         if(!md){
             let url = window.location.pathname

@@ -1,13 +1,18 @@
 import React, {useEffect, useState} from 'react'
 import '../css/resume.css'
-import resume1 from '../files/resume1.png'
-import resume2 from '../files/resume2.png'
-import resumeFromAi_1 from '../files/resume from ai pngs/resumeFromAi_1.png'
-import resumeFromAi_2 from '../files/resume from ai pngs/resumeFromAi_2.png'
+import resume from '../files/Mark_Lights_Resume_Aug_24.png'
 const Resume = () => {
   const [mediumDevice,setMediumDevice] = useState(false)
   
   useEffect(() =>{
+    window.addEventListener('resize', () =>{
+      if(window.innerWidth < 499){
+        setMediumDevice(!mediumDevice)
+      }else{
+        setMediumDevice(!mediumDevice)
+      }
+    })
+
     if(window.width < 499){
       setMediumDevice(!mediumDevice)
     }else{
@@ -17,8 +22,7 @@ const Resume = () => {
 
   return (
     <>
-      <img className='resume1' src={resumeFromAi_1}/>
-      <img className='resume2' src={resumeFromAi_2}/>
+      <img className='resume1' src={resume} alt='lightsFinance'/>
     </>
     
   )
