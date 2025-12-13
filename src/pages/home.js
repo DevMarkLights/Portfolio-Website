@@ -11,7 +11,7 @@ const Home = () => {
             <div className='description'>
                 <h1>Hi, I am <span>Mark Lights</span></h1>
                 <h3>I'm a full stack software engineer</h3>
-                <h5>Skilled in Java, CSS, M.E.R.N. Stack, and SQL and currently employed at General Motors</h5>
+                <h5>Skilled in Java, Javascript, python, HTML, Rest Apis, CSS, Spring Boot, React.js, Express,js, Node.js, Next.js, SQL, MongoDB, Azure, and Google Cloud, Git, Pandas, Scokit-Learn, PyTorch, Machine Learning</h5>
                 <Link to={'/about'} style={{textDecoration: 'none'}}>
                     <button className='learn-more'>Learn More</button>
                 </Link>

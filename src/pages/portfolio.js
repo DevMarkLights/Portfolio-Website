@@ -1,7 +1,6 @@
 import React from 'react'
 
 import '../css/portfolio.css'
-import kiroLandingPage from '../files/kiroLandingPage.png'
 import lightsFinaceImg from '../files/Lights_Finance.png'
 const Portfolio = () => {
   return (
@@ -13,8 +12,10 @@ const Portfolio = () => {
                 <h3>Description:</h3>
                 <ul>
                     <li>
-                    Lights Finance is a dividend calculator web application. Shows your sector diversification, 
-                    calculates your monthly dividend and Calculates future value of the portfolio given previous metrics.
+                    Light Finance is a dividend calculator and finance web application. Shows your sector diversification, 
+                    calculates your monthly dividend and calculates future value of the portfolio given previous metrics. 
+                    Incorporates the rate of return for options and unusual activity in the options market. 
+                    Has a built-in Robinhood report reader that calculates your monthly income from options and dividends.
                     </li>
                 </ul>
                 <h3>Skills/Technologies used:</h3>
@@ -23,13 +24,14 @@ const Portfolio = () => {
                     <li>MongoDB</li>
                     <li>Hosting:</li>
                     <ul>
-                        <li>Google Cloud</li>
+                        <li>Raspberry Pi</li>
+                        <li>Cloudflare tunneling</li>
                     </ul>
                 </ul>
             </div>
 
             <div className='right-side-of-project'>
-                <img className='lightsFinanceLandingPage' src={lightsFinaceImg} alt='landing page of website' onClick={() => {window.location.href = 'https://lightsfinanceimage-gfcq4f6cla-ue.a.run.app/'}}/>
+                <img className='lightsFinanceLandingPage' src={lightsFinaceImg} alt='landing page of website' onClick={() => {window.location.href = 'https://marks-pi.com/finance'}}/>
             </div>
         </div>
         
