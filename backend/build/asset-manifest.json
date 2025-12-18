@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ebc3726a.css",
+    "main.js": "/static/js/main.a6b25358.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/Final_Project_Report_CS7643.pdf": "/static/media/Final_Project_Report_CS7643.67d77272d2d8995092bb.pdf",
+    "static/media/profilePic.jpg": "/static/media/profilePic.7b2d397dd7cb13c84947.jpg",
+    "static/media/Resume Dec_25-2.png": "/static/media/Resume Dec_25-2.114d4144fd0e23c68022.png",
+    "static/media/Lights_Finance.png": "/static/media/Lights_Finance.33094c73e3cd1f449a55.png",
+    "static/media/Resume Dec_25-1.png": "/static/media/Resume Dec_25-1.347d34d33555b6de3e74.png",
+    "static/media/Mark_Lights_Resume_Aug_24.png": "/static/media/Mark_Lights_Resume_Aug_24.cdeb9fb85696a75de352.png",
+    "static/media/apple_bitmoji.png": "/static/media/apple_bitmoji.c623f9e03f1afde89959.png",
+    "index.html": "/index.html",
+    "main.ebc3726a.css.map": "/static/css/main.ebc3726a.css.map",
+    "main.a6b25358.js.map": "/static/js/main.a6b25358.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebc3726a.css",
+    "static/js/main.a6b25358.js"
+  ]
+}

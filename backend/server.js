@@ -7,12 +7,13 @@ const path = require('path')
 // require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 4000;
 
-app.use(express.static(path.join(__dirname + '/public')))
-app.get('/home', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')))
-app.get('/resume', (req,res) => res.sendFile(path.join(__dirname, 'public','index.html')))
-app.get('/about', (req,res) => res.sendFile(path.join(__dirname, 'public', 'index.html')))
-app.get('/portfolio',(req,res) => res.sendFile(path.join(__dirname, 'public', 'index.html')))
-app.get('/', (req,res) => res.sendfile(path.join(__dirname, 'public', 'index.html')))
+app.use(express.static(path.join(__dirname + '/build')))
+app.get('/home', (req, res) => res.sendFile(path.join(__dirname, 'build', 'index.html')))
+app.get('/resume', (req,res) => res.sendFile(path.join(__dirname, 'build','index.html')))
+app.get('/about', (req,res) => res.sendFile(path.join(__dirname, 'build', 'index.html')))
+app.get('/portfolio',(req,res) => res.sendFile(path.join(__dirname, 'build', 'index.html')))
+app.get('/articles',(req,res) => res.sendFile(path.join(__dirname, 'build', 'index.html')))
+app.get('/', (req,res) => res.sendfile(path.join(__dirname, 'build', 'index.html')))
 
 
 app.listen(port, () => {

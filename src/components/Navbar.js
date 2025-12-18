@@ -3,8 +3,9 @@ import '../css/Navbar.css'
 import {Link} from 'react-router-dom'
 import Contact from '../pages/contact'
 import Sidebar from './sidebar'
+
 const Navbar = () => {
-    var arrayNavLinks = ['home','about','resume','portfolio']
+    var arrayNavLinks = ['home','about','resume','portfolio','articles']
     const [contactClicked,setContactClicked] = useState(false)
     const [mediumDevice,setMediumDevice] = useState(false)
     const [sidebarOpened, setSidebarOpened] = useState(false)
@@ -24,7 +25,7 @@ const Navbar = () => {
     useEffect(() =>{
         var md
         window.addEventListener('resize', () =>{
-            if(window.innerWidth < 499){
+            if(window.innerWidth < 600){
               setMediumDevice(true)
               md = true
             }else{
@@ -96,6 +97,9 @@ const Navbar = () => {
                 </Link>
                 <Link to='/portfolio' style={{textDecoration: 'none'}} onClick={() => {checkurl('portfolio')}}>
                     <p id='portfolio'>Portfolio</p>
+                </Link>
+                <Link to='/articles' style={{textDecoration: 'None'}} onClick={() => {checkurl('articles')}}>
+                    <p id='articles'>Articles</p>
                 </Link>
                 <p id='contact' onClick={() =>{setContactClicked(!contactClicked)}}>Contact Me</p>
                 {
