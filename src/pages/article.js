@@ -7,16 +7,16 @@ const Article = () => {
   useEffect(() =>{
     window.addEventListener('resize', () =>{
       if(window.innerWidth < 499){
-        setMediumDevice(!mediumDevice)
+        setMediumDevice(true)
       }else{
-        setMediumDevice(!mediumDevice)
+        setMediumDevice(false)
       }
     })
 
-    if(window.width < 499){
-      setMediumDevice(!mediumDevice)
+    if(window.innerWidth < 499){
+      setMediumDevice(true)
     }else{
-      setMediumDevice(!mediumDevice)
+      setMediumDevice(false)
     }
   },[])
 
