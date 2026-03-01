@@ -9,14 +9,14 @@ const Resume = () => {
   
   useEffect(() =>{
     window.addEventListener('resize', () =>{
-      if(window.innerWidth < 499){
+      if(window.outerWidth < 499){
         setMediumDevice(true)
       }else{
         setMediumDevice(false)
       }
     })
 
-    if(window.width < 499){
+    if(window.outerWidth < 499){
       setMediumDevice(true)
     }else{
       setMediumDevice(false)
