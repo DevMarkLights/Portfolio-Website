@@ -10,12 +10,12 @@ const Portfolio = () => {
         <h1>Projects</h1>
          <div className='projects-list'>
             <div className='left-side-of-project'>
-                <h2>Lights Finance</h2>
+                <h2>AI Researcher</h2>
                 <h3>Description:</h3>
                 <ul>
                     <li>
                     I have built a multi-agent AI researcher using 3 agents planner, research, and writer agent. They are connected using LangChain planner to researcher to writer. Backend is built using FastApi and Frontend is built using react.js. 
-                    
+
                     You can query the AI researcher with any question and it will search the internet and use those findings as context for the writer model. The writer will generate a report for you to read.
                     </li>
                 </ul>
