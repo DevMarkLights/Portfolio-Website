@@ -3,10 +3,42 @@ import '../css/portfolio.css'
 import lightsFinaceImg from '../files/Lights_Finance.png'
 import rag_ui from '../files/Rag UI.png'
 import compressPDF_UI from '../files/compreePDF UI.png'
+import ai_researcher_ui from '../files/AI Researcher UI.png'
 const Portfolio = () => {
   return (
     <div className='portfolio-body'>
         <h1>Projects</h1>
+         <div className='projects-list'>
+            <div className='left-side-of-project'>
+                <h2>Lights Finance</h2>
+                <h3>Description:</h3>
+                <ul>
+                    <li>
+                    I have built a multi-agent AI researcher using 3 agents planner, research, and writer agent. They are connected using LangChain planner to researcher to writer. Backend is built using FastApi and Frontend is built using react.js. 
+                    
+                    You can query the AI researcher with any question and it will search the internet and use those findings as context for the writer model. The writer will generate a report for you to read.
+                    </li>
+                </ul>
+                <h3>Skills/Technologies used:</h3>
+                <ul>
+                    <li>React.js</li>
+                    <li>MongoDB</li>
+                    <li>LangChain</li>
+                    <li>Agentic Models</li>
+                    <li></li>
+                    <li>Hosting:</li>
+                    <ul>
+                        <li>Raspberry Pi</li>
+                        <li>Cloudflare tunneling</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div className='right-side-of-project'>
+                <img className='lightsFinanceLandingPage' src={ai_researcher_ui} alt='landing page of website' onClick={() => {window.location.href = 'https://marks-pi.com/ai-researcher/'}}/>
+            </div>
+        </div>
+
         <div className='projects-list'>
             <div className='left-side-of-project'>
                 <h2>Lights Finance</h2>
