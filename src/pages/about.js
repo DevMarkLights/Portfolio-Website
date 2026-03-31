@@ -7,16 +7,10 @@ const About = () => {
         <div className='descrip-pp-container'>
             <div className='description'>
                 <h2>I'm a Software Engineer</h2>
-                {/* <h4>With a Bachelors of Science in Computer Science from Francis Marion <i className="fa fa-university" aria-hidden="true"></i></h4>
-                <h4>I am currently getting my Masters in Computer Science with a Concentration in Machine Learning at Georgia Institute of Technology <i className="fa fa-university" aria-hidden="true"></i></h4>
-                <h4>My profecient skills in web Development are: <span>Java, Javascript, python, HTML, Rest Apis, CSS, Spring Boot, React.js, Express,js, Node.js, Next.js, SQL, MongoDB, Azure, and Google Cloud, Git, Pandas, Scokit-Learn, PyTorch, Machine Learning </span></h4> */}
-                <h4>
-                    Full-stack Software Engineer with 3+ years of experience designing and deploying scalable 
-                    applications using Java, Python, React, and SQL. Currently pursuing an M.S. in Computer 
-                    Science (Machine Learning concentration) at Georgia Tech. Skilled in Spring Boot, REST API 
-                    development, and cloud integration (Azure, GCP). Passionate about bridging software 
-                    engineering and machine learning to build intelligent, production-ready systems that drive 
-                    business impact.
+                <h4>Software Engineer with 4 years of enterprise experience at General Motors, currently completing an M.S. in 
+                    Computer Science (Machine Learning) at Georgia Institute of Technology. Builds and deploys production AI systems 
+                    including multi-agent LLM pipelines, RAG applications, and fine-tuned language models. Strong foundation in 
+                    full-stack engineering (Java, Python, React, Spring Boot) combined with hands-on AI/ML development. 
                 </h4>
                 <h3>Short Term Goals:</h3>
                 <ul>

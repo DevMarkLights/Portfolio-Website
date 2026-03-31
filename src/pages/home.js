@@ -11,7 +11,12 @@ const Home = () => {
             <div className='description'>
                 <h1>Hi, I am <span>Mark Lights</span></h1>
                 <h3>I'm a full stack software engineer</h3>
-                <h5>Skilled in Java, Javascript, python, HTML, Rest Apis, CSS, Spring Boot, React.js, Express,js, Node.js, Next.js, SQL, MongoDB, Azure, and Google Cloud, Git, Pandas, Scokit-Learn, PyTorch, Machine Learning</h5>
+                <h5>Skilled in Python, Java, JavaScript, TypeScript, HTML, CSS, SQL
+                    Spring Boot, FastAPI, React.js, Next.js, Node.js, Express.js
+                    Pandas, MongoDB, PostgreSQL, Spring Batch, LangGraph, LangChain, LlamaIndex, 
+                    ChromaDB, HuggingFace, PyTorch, Scikit-Learn, RAG, LoRA / Fine-tuning, Prompt Engineering
+                    Azure, Google Cloud, Docker, Cloudflare Tunneling, Raspberry Pi (self-hosted), Git
+                </h5>
                 <Link to={'/about'} style={{textDecoration: 'none'}}>
                     <button className='learn-more'>Learn More</button>
                 </Link>
