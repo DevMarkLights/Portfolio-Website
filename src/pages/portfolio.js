@@ -4,11 +4,47 @@ import lightsFinaceImg from '../files/Lights_Finance.png'
 import rag_ui from '../files/Rag UI.png'
 import compressPDF_UI from '../files/compreePDF UI.png'
 import ai_researcher_ui from '../files/AI Researcher UI.png'
+import ai_code_reviewer_ui from '../files/Ai Code Reviewer UI.png'
 const Portfolio = () => {
   return (
     <div className='portfolio-body'>
         <h1>Projects</h1>
          <div className='projects-list'>
+            <div className='left-side-of-project'>
+                <h2>AI Researcher</h2>
+                <h3>Description:</h3>
+                <ul>
+                    <li>
+                    I have built a multi-agent AI code reviewer using 4 agents — bug, security, performance, and writer. 
+                    The bug, security, and performance agents run concurrently using LangGraph's Send API, meaning all 
+                    three analyze the code simultaneously rather than sequentially. Their findings are then passed to the 
+                    writer agent which formats everything into a structured review. The backend is built using FastAPI and 
+                    the frontend is built using React.js.
+
+                    You can submit any public GitHub Pull Request URL and the agents will fetch the diff, analyze the 
+                    changed code, and automatically post a formatted markdown review comment directly to the PR on GitHub.
+                    </li>
+                </ul>
+                <h3>Skills/Technologies used:</h3>
+                <ul>
+                    <li>React.js</li>
+                    <li>LangChain</li>
+                    <li>Python</li>
+                    <li>Agentic Models</li>
+                    <li>Hosting:</li>
+                    <ul>
+                        <li>Raspberry Pi</li>
+                        <li>Cloudflare tunneling</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div className='right-side-of-project'>
+                <img className='lightsFinanceLandingPage' src={ai_code_reviewer_ui} alt='landing page of website' onClick={() => {window.location.href = 'https://marks-pi.com/ai-code-reviewer/'}}/>
+            </div>
+        </div>
+
+        <div className='projects-list'>
             <div className='left-side-of-project'>
                 <h2>AI Researcher</h2>
                 <h3>Description:</h3>
@@ -22,10 +58,9 @@ const Portfolio = () => {
                 <h3>Skills/Technologies used:</h3>
                 <ul>
                     <li>React.js</li>
-                    <li>MongoDB</li>
                     <li>LangChain</li>
                     <li>Agentic Models</li>
-                    <li></li>
+                    <li>Python</li>
                     <li>Hosting:</li>
                     <ul>
                         <li>Raspberry Pi</li>
