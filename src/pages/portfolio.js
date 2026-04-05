@@ -11,7 +11,7 @@ const Portfolio = () => {
         <h1>Projects</h1>
          <div className='projects-list'>
             <div className='left-side-of-project'>
-                <h2>AI Researcher</h2>
+                <h2>AI Code Reviewer</h2>
                 <h3>Description:</h3>
                 <ul>
                     <li>
