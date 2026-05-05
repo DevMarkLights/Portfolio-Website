@@ -5,172 +5,61 @@ import rag_ui from '../files/Rag UI.png'
 import compressPDF_UI from '../files/compreePDF UI.png'
 import ai_researcher_ui from '../files/AI Researcher UI.png'
 import ai_code_reviewer_ui from '../files/Ai Code Reviewer UI.png'
+import ai_interview_coach_png from '../files/ai interview coach ui.png'
+import Project from '../components/project'
 const Portfolio = () => {
   return (
     <div className='portfolio-body'>
         <h1>Projects</h1>
-         <div className='projects-list'>
-            <div className='left-side-of-project'>
-                <h2>AI Code Reviewer</h2>
-                <h3>Description:</h3>
-                <ul>
-                    <li>
-                    I have built a multi-agent AI code reviewer using 4 agents — bug, security, performance, and writer. 
-                    The bug, security, and performance agents run concurrently using LangGraph's Send API, meaning all 
-                    three analyze the code simultaneously rather than sequentially. Their findings are then passed to the 
-                    writer agent which formats everything into a structured review. The backend is built using FastAPI and 
-                    the frontend is built using React.js.
 
-                    You can submit any public GitHub Pull Request URL and the agents will fetch the diff, analyze the 
-                    changed code, and automatically post a formatted markdown review comment directly to the PR on GitHub.
-                    </li>
-                </ul>
-                <h3>Skills/Technologies used:</h3>
-                <ul>
-                    <li>React.js</li>
-                    <li>LangChain</li>
-                    <li>Python</li>
-                    <li>Agentic Models</li>
-                    <li>Hosting:</li>
-                    <ul>
-                        <li>Raspberry Pi</li>
-                        <li>Cloudflare tunneling</li>
-                    </ul>
-                </ul>
-            </div>
+        <Project title={'AI Interview Coach'} 
+            img={ai_interview_coach_png} 
+            description={"I built an AI Interview Coach and it just helped me prep for my own job search.Job hunting is brutal. You find the perfect role, spend hours crafting your resume, and then freeze when the interviewer asks 'tell me about a time when...' So I built something to fix that. This takes any SWE/ML/AI job description and turns it into a personalized mock interview — in seconds."} 
+            url={'https://marks-pi.com/ai-interview-coach/'}
+            skills={['React.js','LangChain','FastApi','Python','Agentic Models', 'LLM']}
+            hosting={['Raspberry Pi','Cloudflare tunneling','nginx']}
+        />
 
-            <div className='right-side-of-project'>
-                <img className='lightsFinanceLandingPage' src={ai_code_reviewer_ui} alt='landing page of website' onClick={() => {window.location.href = 'https://marks-pi.com/ai-code-reviewer/'}}/>
-            </div>
-        </div>
+        <Project title={'AI Code Reviewer'} 
+            img={ai_code_reviewer_ui} 
+            description={"I have built a multi-agent AI code reviewer using 4 agents — bug, security, performance, and writer. The bug, security, and performance agents run concurrently using LangGraph's Send API, meaning all three analyze the code simultaneously rather than sequentially. Their findings are then passed to the writer agent which formats everything into a structured review. The backend is built using FastAPI and the frontend is built using React.js. You can submit any public GitHub Pull Request URL and the agents will fetch the diff, analyze the changed code, and automatically post a formatted markdown review comment directly to the PR on GitHub"} 
+            url={'https://marks-pi.com/ai-code-reviewer/'}
+            skills={['React.js','LangChain','FastApi','Python','Agentic Models', 'LLM']}
+            hosting={['Raspberry Pi','Cloudflare tunneling','nginx']}
+        />
 
-        <div className='projects-list'>
-            <div className='left-side-of-project'>
-                <h2>AI Researcher</h2>
-                <h3>Description:</h3>
-                <ul>
-                    <li>
-                    I have built a multi-agent AI researcher using 3 agents planner, research, and writer agent. They are connected using LangChain planner to researcher to writer. Backend is built using FastApi and Frontend is built using react.js. 
+        <Project title={'AI Researcher'} 
+            img={ai_researcher_ui} 
+            description={"I have built a multi-agent AI researcher using 3 agents planner, research, and writer agent. They are connected using LangChain planner to researcher to writer. Backend is built using FastApi and Frontend is built using react.js. You can query the AI researcher with any question and it will search the internet and use those findings as context for the writer model. The writer will generate a report for you to read."} 
+            url={'https://marks-pi.com/ai-researcher/'}
+            skills={['React.js','LangChain','FastApi','Python','Agentic Models', 'LLM']}
+            hosting={['Raspberry Pi','Cloudflare tunneling','ngnix']}
+        />
 
-                    You can query the AI researcher with any question and it will search the internet and use those findings as context for the writer model. The writer will generate a report for you to read.
-                    </li>
-                </ul>
-                <h3>Skills/Technologies used:</h3>
-                <ul>
-                    <li>React.js</li>
-                    <li>LangChain</li>
-                    <li>Agentic Models</li>
-                    <li>Python</li>
-                    <li>Hosting:</li>
-                    <ul>
-                        <li>Raspberry Pi</li>
-                        <li>Cloudflare tunneling</li>
-                    </ul>
-                </ul>
-            </div>
+        <Project title={'Lights Finance'} 
+            img={lightsFinaceImg} 
+            description={"Lights Finance is a dividend calculator and finance web application. Shows your sector diversification, calculates your monthly dividend and calculates future value of the portfolio given previous metrics. Incorporates the rate of return for options and unusual activity in the options market. Has a built-in Robinhood report reader that calculates your monthly income from options and dividends."} 
+            url={'https://marks-pi.com/finance'}
+            skills={['Next.js','MongoDb']}
+            hosting={['Raspberry Pi','Cloudflare tunneling','ngnix']}
+        />
 
-            <div className='right-side-of-project'>
-                <img className='lightsFinanceLandingPage' src={ai_researcher_ui} alt='landing page of website' onClick={() => {window.location.href = 'https://marks-pi.com/ai-researcher/'}}/>
-            </div>
-        </div>
+        <Project title={'Rag Pipeline'} 
+            img={rag_ui} 
+            description={"Developed a document retrieval and question-answering application that allows users to upload PDF and TXT files and query their contents using semantic search. Implemented a Python/FastAPI backend utilizing the all-MiniLM-L6-v2 embedding model and ChromaDB for vector storage and similarity search. Built a React/Express frontend for user interaction and deployed the system on a self-hosted Raspberry Pi 5 environment."} 
+            url={'https://marks-pi.com/rag/'}
+            skills={['FastApi','ChromaDB','React.js','Docker','Rag','Linux','Bash']}
+            hosting={['Raspberry Pi','Cloudflare tunneling','ngnix']}
+        />    
 
-        <div className='projects-list'>
-            <div className='left-side-of-project'>
-                <h2>Lights Finance</h2>
-                <h3>Description:</h3>
-                <ul>
-                    <li>
-                    Light Finance is a dividend calculator and finance web application. Shows your sector diversification, 
-                    calculates your monthly dividend and calculates future value of the portfolio given previous metrics. 
-                    Incorporates the rate of return for options and unusual activity in the options market. 
-                    Has a built-in Robinhood report reader that calculates your monthly income from options and dividends.
-                    </li>
-                </ul>
-                <h3>Skills/Technologies used:</h3>
-                <ul>
-                    <li>Next.js</li>
-                    <li>MongoDB</li>
-                    <li>Hosting:</li>
-                    <ul>
-                        <li>Raspberry Pi</li>
-                        <li>Cloudflare tunneling</li>
-                    </ul>
-                </ul>
-            </div>
+        <Project title={'Compress PDF'} 
+            img={compressPDF_UI} 
+            description={"For anybody who gets tired of searching for a pdf compressor and you upload your files. Just to find out it requires your email to download it. Or worse you have a set limit on how many you can upload and it charges you a fee. This is for you. It's simple, free, and unlimited. All files uploaded are instantly deleted after being compressed and returned back to you. There is a catch only 1 file at a time."} 
+            url={'https://marks-pi.com/compressPDFApp/'}
+            skills={['FastApi','React.js','Docker','Linux','Bash']}
+            hosting={['Raspberry Pi','Cloudflare tunneling','ngnix']}
+        /> 
 
-            <div className='right-side-of-project'>
-                <img className='lightsFinanceLandingPage' src={lightsFinaceImg} alt='landing page of website' onClick={() => {window.location.href = 'https://marks-pi.com/finance'}}/>
-            </div>
-        </div>
-
-        <div className='projects-list'>
-            <div className='left-side-of-project'>
-                <h2>Rag Pipeline</h2>
-                <h3>Description:</h3>
-                <ul>
-                    <li>
-                        Developed a document retrieval and question-answering application that allows
-                        users to upload PDF and TXT files and query their contents using semantic
-                        search. Implemented a Python/FastAPI backend utilizing the all-MiniLM-L6-v2
-                        embedding model and ChromaDB for vector storage and similarity search. Built a
-                        React/Express frontend for user interaction and deployed the system on a
-                        self-hosted Raspberry Pi 5 environment.
-                    </li>
-                </ul>
-                <h3>Skills/Technologies used:</h3>
-                <ul>
-                    <li>FastAPI</li>
-                    <li>ChromaDB</li>
-                    <li>Docker</li>
-                    <li>Rag (Retrieval-Augmented Generation)</li>
-                    <li>Linux</li>
-                    <li>Bash</li>
-                    <li>Hosting:</li>
-                    <ul>
-                        <li>Raspberry Pi</li>
-                        <li>Cloudflare tunneling</li>
-                    </ul>
-                </ul>
-            </div>
-
-            <div className='right-side-of-project'>
-                <img className='lightsFinanceLandingPage' src={rag_ui} alt='landing page of website' onClick={() => {window.location.href = 'https://marks-pi.com/rag/'}}/>
-            </div>
-        </div>      
-
-        <div className='projects-list'>
-            <div className='left-side-of-project'>
-                <h2>Compress PDF</h2>
-                <h3>Description:</h3>
-                <ul>
-                    <li>
-                        For anybody who gets tired of searching for a pdf compressor and you upload
-                        your files. Just to find out it requires your email to download it. Or worse you
-                        have a set limit on how many you can upload and it charges you a fee. This is for
-                        you. It's simple, free, and unlimited. All files uploaded are instantly
-                        deleted after being compressed and returned back to you. There is a catch only 1
-                        file at a time.
-                    </li>
-                </ul>
-                <h3>Skills/Technologies used:</h3>
-                <ul>
-                    <li>FastAPI</li>
-                    <li>React.js</li>
-                    <li>Linux</li>
-                    <li>Bash</li>
-                    <li>python</li>
-                    <li>Hosting:</li>
-                    <ul>
-                        <li>Raspberry Pi</li>
-                        <li>Cloudflare tunneling</li>
-                    </ul>
-                </ul>
-            </div>
-
-            <div className='right-side-of-project'>
-                <img className='lightsFinanceLandingPage' src={compressPDF_UI} alt='landing page of website' onClick={() => {window.location.href = 'https://marks-pi.com/compressPDFApp/'}}/>
-            </div>
-        </div>    
     </div>
   )
 }
