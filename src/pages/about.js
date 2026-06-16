@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from '../files/profilePic.jpg'
+import profilePic from '../files/profilePic.png'
 import '../css/about.css'
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
                 <h4>I am currently getting my Masters in Computer Science with a Concentration in Machine Learning at Georgia Institute of Technology <i className="fa fa-university" aria-hidden="true"></i></h4>
                 <h4>My profecient skills in web Development are: <span>Java, Javascript, python, HTML, Rest Apis, CSS, Spring Boot, React.js, Express,js, Node.js, Next.js, SQL, MongoDB, Azure, and Google Cloud, Git, Pandas, Scokit-Learn, PyTorch, Machine Learning </span></h4> */}
                 <h4>
-                    Full-stack Software Engineer with 3+ years of experience designing and deploying scalable 
+                    Full-stack Software Engineer with 4+ years of experience designing and deploying scalable 
                     applications using Java, Python, React, and SQL. Currently pursuing an M.S. in Computer 
                     Science (Machine Learning concentration) at Georgia Tech. Skilled in Spring Boot, REST API 
                     development, and cloud integration (Azure, GCP). Passionate about bridging software 

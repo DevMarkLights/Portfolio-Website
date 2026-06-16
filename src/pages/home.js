@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from '../files/profilePic.jpg'
+import profilePic from '../files/profilePic.png'
 import '../css/home.css'
 import appleBitmoji from '../files/apple_bitmoji.png'
 import {Link} from 'react-router-dom'
