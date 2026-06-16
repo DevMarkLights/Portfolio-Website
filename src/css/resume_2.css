@@ -1,0 +1,393 @@
+/* =========================================
+   resume.css — matches home.css theme
+   teal accent: rgb(10, 156, 156)
+   text: rgb(235, 227, 227)
+   muted: rgb(180, 172, 172)
+   bg: #1a1a2e
+   ========================================= */
+
+.resumePage {
+    margin: 40px 40px 0 40px;
+    color: rgb(235, 227, 227);
+}
+
+/* ---- HEADER ---- */
+.resume-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    animation: .7s ease-out 0s 1 slideInFromLeftToRight;
+}
+
+.resume-header-info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(235, 227, 227);
+    line-height: 1.2;
+}
+
+.resume-header-info h1 span {
+    color: rgb(10, 156, 156);
+}
+
+.resume-header-info h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(180, 172, 172);
+    margin-top: 6px;
+}
+
+.resume-header-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    animation: .7s ease-out 0s 1 slideInFromRightToLeft;
+}
+
+.hlink {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgb(10, 156, 156);
+    font-size: 13px;
+    background-color: rgba(10, 156, 156, 0.08);
+    border: 1px solid rgba(10, 156, 156, 0.3);
+    border-radius: 100px;
+    padding: 6px 14px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.hlink:hover {
+    background-color: rgba(10, 156, 156, 0.2);
+    color: rgb(10, 156, 156);
+}
+
+/* ---- DIVIDER ---- */
+.resume-divider {
+    height: 1px;
+    background: rgba(10, 156, 156, 0.2);
+    margin-bottom: 2.5rem;
+}
+
+/* ---- GRID ---- */
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+/* ---- SECTION TITLE ---- */
+.section-title {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgb(10, 156, 156);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(10, 156, 156, 0.2);
+}
+
+.section {
+    margin-bottom: 2.5rem;
+}
+
+/* ---- WORK EXPERIENCE ---- */
+.work-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(10, 156, 156, 0.15);
+    border-left: 3px solid rgb(10, 156, 156);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: background 0.2s;
+    animation: .7s ease-out 0s 1 slideInFromLeftToRight;
+}
+
+.work-card:hover {
+    background: rgba(10, 156, 156, 0.04);
+}
+
+.work-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 4px;
+}
+
+.work-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(235, 227, 227);
+}
+
+.work-dates {
+    font-size: 11px;
+    color: rgb(10, 156, 156);
+    white-space: nowrap;
+    background: rgba(10, 156, 156, 0.1);
+    border-radius: 100px;
+    padding: 2px 10px;
+}
+
+.work-company {
+    font-size: 13px;
+    color: rgb(10, 156, 156);
+    margin-bottom: 10px;
+}
+
+.work-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.work-bullets li {
+    font-size: 13px;
+    color: rgb(180, 172, 172);
+    line-height: 1.65;
+    padding: 3px 0 3px 18px;
+    position: relative;
+}
+
+.work-bullets li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: rgb(10, 156, 156);
+}
+
+/* ---- PROJECT CARDS ---- */
+.proj-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(10, 156, 156, 0.15);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s, background 0.2s;
+    animation: .7s ease-out 0s 1 slideInFromLeftToRight;
+}
+
+.proj-card:hover {
+    border-color: rgba(10, 156, 156, 0.5);
+    background: rgba(10, 156, 156, 0.04);
+    cursor: pointer;
+}
+
+
+.proj-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 6px;
+}
+
+.proj-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(235, 227, 227);
+}
+
+.proj-year {
+    font-size: 11px;
+    color: rgb(10, 156, 156);
+    white-space: nowrap;
+    background: rgba(10, 156, 156, 0.1);
+    border-radius: 100px;
+    padding: 2px 10px;
+}
+
+.proj-desc {
+    font-size: 13px;
+    color: rgb(180, 172, 172);
+    line-height: 1.65;
+    margin-bottom: 12px;
+}
+
+/* ---- TAGS ---- */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    font-size: 10px;
+    padding: 3px 9px;
+    border-radius: 100px;
+    border: 1px solid rgba(10, 156, 156, 0.3);
+    color: rgb(10, 156, 156);
+    background: rgba(10, 156, 156, 0.07);
+}
+
+.tag-gray {
+    border-color: rgba(235, 227, 227, 0.12);
+    color: rgb(180, 172, 172);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* ---- SIDEBAR ---- */
+.sidebar {
+    animation: .7s ease-out 0s 1 slideInFromRightToLeft;
+}
+
+.side-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(10, 156, 156, 0.15);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* ---- CONTACT ---- */
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgb(180, 172, 172);
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-row:last-child {
+    border-bottom: none;
+}
+
+.contact-row i {
+    color: rgb(10, 156, 156);
+    font-size: 14px;
+    width: 16px;
+    text-align: center;
+}
+
+/* ---- EDUCATION ---- */
+.edu-school {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(235, 227, 227);
+}
+
+.edu-degree {
+    font-size: 12px;
+    color: rgb(10, 156, 156);
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.edu-meta {
+    font-size: 11px;
+    color: rgb(140, 135, 135);
+    margin-top: 6px;
+}
+
+/* ---- SKILLS ---- */
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.skill-group {
+    margin-bottom: 1.25rem;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgb(140, 135, 135);
+    margin-bottom: 8px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.chip {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(235, 227, 227, 0.1);
+    color: rgb(200, 195, 195);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* ---- ANIMATIONS (same as home.css) ---- */
+@keyframes slideInFromLeftToRight {
+    0% {
+        transform: translateX(-1000px);
+        opacity: .10;
+    }
+    20% { opacity: .30; }
+    40% { opacity: .50; }
+    60% { opacity: .70; }
+    80% { opacity: .90; }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRightToLeft {
+    0% {
+        transform: translateX(1000px);
+        opacity: .10;
+    }
+    20% { opacity: .30; }
+    40% { opacity: .50; }
+    60% { opacity: .70; }
+    80% { opacity: .90; }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* ---- RESPONSIVE ---- */
+@media (width < 768px) {
+    .resumePage {
+        margin: 10px;
+    }
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+    .resume-header {
+        flex-direction: column;
+    }
+    .resume-header-links {
+        flex-direction: row;
+    }
+}
+
+@media (width < 499px) {
+    .resumePage {
+        margin: 10px 10px 0 10px;
+    }
+    .resume-header-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

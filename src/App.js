@@ -7,6 +7,7 @@ import Resume from './pages/resume';
 import About from './pages/about';
 import Portfolio from './pages/portfolio';
 import Article from './pages/article';
+import Resume2 from "./pages/resume_2"
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Redirect/>}/>
         <Route path="/home" element={<Home/>}/>
-        <Route path="/resume" element={<Resume/>}/>
+        <Route path="/resume" element={<Resume2/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path='/portfolio' element={<Portfolio/>}/>
         <Route path='/articles' element={<Article/>}/>
