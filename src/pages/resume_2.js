@@ -60,7 +60,7 @@ const Resume = () => {
             <p className='section-title'>work experience</p>
             <WorkExperience 
               jobTitle={'Software Engineer'} 
-              dates={'2021 — Present'} 
+              dates={'2022 — 2026'} 
               companyName={'General Motors'} 
               location={'Roswell, GA'}
               roleDescription={GM_Job}/>
