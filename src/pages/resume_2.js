@@ -16,6 +16,12 @@ var GM_Job = [
   'Delivered full-stack enhancements using Spring Boot and JSP, improving user-facing workflows across business-critical systems',
   'Documented production deployment and rollback procedures to support release coordination and reduce recovery time']
 
+let tmo_Job = [
+  'mproved billing batch job performance by reducing wall clock time from 1hr to 10 mins',
+  'Reduced tuxedo average response time from avg 2.13s to <=500ms',
+  'Implemented Direct Provisioning for new customers'
+]
+
 const Resume = () => {
   return (
     <div className='resumePage'>
@@ -59,8 +65,15 @@ const Resume = () => {
           <div className='section'>
             <p className='section-title'>work experience</p>
             <WorkExperience 
+              jobTitle={'Software Engineer 2'} 
+              dates={'July 2026 — Present'} 
+              companyName={'T-Mobile'} 
+              location={'Dunwoody, GA'}
+              roleDescription={tmo_Job}/>
+              
+            <WorkExperience 
               jobTitle={'Software Engineer'} 
-              dates={'2022 — 2026'} 
+              dates={'June 2022 — June 2026'} 
               companyName={'General Motors'} 
               location={'Roswell, GA'}
               roleDescription={GM_Job}/>
